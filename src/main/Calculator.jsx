@@ -8,7 +8,7 @@ const initialState = {
     displayValue: '0',
     clearDisplay: false,
     operation: null,
-    value: [0, 0],
+    values: [0, 0],
     current: 0
 }
 
@@ -67,7 +67,7 @@ export default class Calculator extends Component{
         if(n !== '.'){
             const i = this.state.current
             const newValue = parseFloat(displayValue)
-            const values = [...this.state.value]
+            const values = [...this.state.values]
             values[i] = newValue
             this.setState({values})
             console.log(values)

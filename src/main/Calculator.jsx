@@ -70,7 +70,7 @@ export default class Calculator extends Component{
             const values = [...this.state.values]
             values[i] = newValue
             this.setState({values})
-            console.log(values)
+            //console.log(values)
         }        
     }
 
